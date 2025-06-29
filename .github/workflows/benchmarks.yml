@@ -3,10 +3,8 @@ name: SDK Benchmark Tests
 on:
   push:
     branches: [ main ]
-
 permissions:
   contents: read
-
 jobs:
   sdk-benchmarks:
     runs-on: equinix-bare-metal
