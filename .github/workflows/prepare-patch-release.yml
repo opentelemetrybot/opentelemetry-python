@@ -9,8 +9,8 @@ jobs:
   prepare-patch-release:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # needed for creating branches and pull requests
-      pull-requests: write # needed for creating pull requests
+      contents: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
 

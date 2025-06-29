@@ -21,7 +21,7 @@ jobs:
   CodeQL-Build:
     runs-on: ubuntu-latest
     permissions:
-      security-events: write # needed for github/codeql-action
+      security-events: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

@@ -11,7 +11,7 @@ jobs:
   sdk-benchmarks:
     runs-on: equinix-bare-metal
     permissions:
-      contents: write # needed for benchmark-action/github-action-benchmark to push to gh-pages
+      contents: write
     steps:
     - name: Checkout Core Repo @ SHA - ${{ github.sha }}
       uses: actions/checkout@v4
