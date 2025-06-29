@@ -2,9 +2,15 @@ name: Prepare patch release
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   prepare-patch-release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # needed for creating branches and pull requests
+      pull-requests: write # needed for creating pull requests
     steps:
       - uses: actions/checkout@v4
 
